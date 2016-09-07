@@ -38,17 +38,20 @@ body {
 }
 .homeGallery{
 	height: 52em;
+	width: auto;
 	overflow: hidden;
 }
-.homeGallery div div div img {
+.homeGallery div div div .carouselPic {
 	height: auto;
 	width: 100%;
 	margin: auto;
 	position: relative;
 }
-.homeGallery2 img{
-	width: 100%;
+.homeGallery2 div div div .carouselPic{
 	height: auto;
+	width: 100%;
+	margin: auto;
+	position: relative;
 }
 .carousel-indicators .active, .carousel-caption{
 	color: grey!important;
@@ -59,12 +62,12 @@ body {
 
 .thumbnail {
 	overflow: hidden;
-	height: 30em;
+	height: 25em;
 	width: auto;
 }
 .thumbnail img {
-	width: auto;
-	height: 100%;
+	width: 30em;
+	height: auto;
 }
 /*Media Query for mobile devices; Note that this breaks Bootstraps media query size limit of 766px so that we can set a custom size limit of 1091px*/
 @media (max-width: 1091px){
@@ -110,6 +113,7 @@ body {
   }
   .homeGallery2 {
 	margin-top: 4em;
+	overflow: hidden;
 	}
 }
 
