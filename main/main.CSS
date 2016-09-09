@@ -62,11 +62,22 @@ body {
 
 .thumbnail {
 	overflow: hidden;
-	height: 25em;
+	height: auto;
 	width: auto;
+	position: relative;
+	filter: grayscale(0) blur(0);
+	-webkit-filter: grayscale(0) blur(0);
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+}
+.thumbnail img:hover {
+	filter: grayscale(20%) blur(3px);
+	-webkik-filter: grayscale(20%) blur(3px);
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
 }
 .thumbnail img {
-	width: 30em;
+	width: auto;
 	height: auto;
 }
 /*Media Query for mobile devices; Note that this breaks Bootstraps media query size limit of 766px so that we can set a custom size limit of 1091px*/
@@ -112,7 +123,7 @@ body {
       float: none;
   }
   .homeGallery2 {
-	margin-top: 4em;
+	margin-top: 4.5em;
 	overflow: hidden;
 	}
 }
