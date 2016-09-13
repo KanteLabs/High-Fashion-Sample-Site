@@ -1,2 +1,2 @@
 -Add a shop it on hover of images of people
--
+-hover for more info
