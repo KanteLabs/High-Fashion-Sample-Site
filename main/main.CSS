@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 /*This css code is mainly for desktop/laptop version of a navbar, other devices will have a hamburger navbar*/
+
 .navbar, .navbar-nav{
 	display: inline-block;
 	float: none;
@@ -12,7 +13,7 @@
 }
 li {
 	list-style-type: none;
-	display: inline;		
+	display: inline;
 }
 ul li a{
 	color: #000;
@@ -59,26 +60,48 @@ body {
 .carousel-caption h1{
 	margin-bottom: 30%;
 }
-
+/*CSS image hover effects for the gallery*/
 .thumbnail {
-	overflow: hidden;
-	height: auto;
-	width: auto;
+	overflow: hidden; 
+	margin-right: 20px;
+	height: 300px;
+	width: 300px;
 	position: relative;
-	filter: grayscale(0) blur(0);
-	-webkit-filter: grayscale(0) blur(0);
-	transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
-}
-.thumbnail img:hover {
-	filter: grayscale(20%) blur(3px);
-	-webkik-filter: grayscale(20%) blur(3px);
-	transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
+	float: left;
+	background-color: rgba(110, 0, 50,0.5);
+	display: inline-block;
+	
 }
 .thumbnail img {
-	width: auto;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
 	height: auto;
+	width: auto;
+	-webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out;
+}
+.thumbnail img:hover {
+	bottom: -10em;
+	padding-top: 100px;
+}
+.thumbnail h2{
+	color: black;
+	left: 10px;
+	position: relative;
+	font-family: 20px;
+	line-height: 24px;
+	margin: 0;
+}
+.row a {
+	text-decoration: none;
+}
+h2.zero,p.zero {
+	margin: 0;
+	padding: 0;
 }
 .subGallery>h1{
 	text-align: center;
@@ -131,7 +154,6 @@ body {
 	overflow: hidden;
 	}
 }
-
 
 
 
