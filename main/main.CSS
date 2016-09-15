@@ -60,6 +60,43 @@ body {
 .carousel-caption h1{
 	margin-bottom: 30%;
 }
+#footer {
+	background-color: #FEF6EB;
+	font-size: 1.2em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+.footerBox{
+	padding-top: 1em;
+}
+form {
+	margin: 0 auto;
+	width: auto;
+	padding: 1em;
+}
+form div + div {
+	margin-top: 1em;
+}
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+input, textarea {
+	 border: 1px solid #999
+}
+input:focus, textarea:focus{
+	border-color: #000;
+}
+textarea {
+	vertical-align: top;
+	height: 53m;
+}
+form > .button {
+	padding-left: 90px;
+	margin-left: .5em;
+}
 /*CSS image hover effects for the gallery*/
 .thumbnail {
 	overflow: hidden; 
