@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*This css code is mainly for desktop/laptop version of a navbar, other devices will have a hamburger navbar*/
+.containerFlex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar, .navbar-nav{
+	display: inline-block;
+	float: none;
+	background-color: #FEF6EB;	
+	text-align: center;
+}
+.navbar-brand img{
+	width: 5em;
+	margin-top: -0.5em;
+}
+li {
+	list-style-type: none;
+	display: inline;
+}
+ul li a{
+	color: #000;
+	padding: 8px 0px 8px 0px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+li a:hover{
+	background-color: #96C0CE;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+.active{
+	background-color: #C25B56;
+	color: white;
+}
+
+/*Home page design layout*/
+h1{
+	text-align: center;
+	font-weight: bold;
+}
+.galleryFlex {		max-width: 1900px;	display: flex;			flex-flow: row wrap;	justify-content: center;			align-content: space-around;			overflow: hidden;			margin-left: -3em;
+}
+body {
+	font-family: 'Poiret One', sans-serif;
+}
+#footer {
+	background-color: #FEF6EB;
+	font-size: 1.2em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+.footerBox{
+	padding-top: 1em;
+}
+form {
+	margin: 0 auto;
+	width: auto;
+	padding: 1em;
+}
+form div + div {
+	margin-top: 1em;
+}
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+input, textarea {
+	 border: 1px solid #999
+}
+input:focus, textarea:focus{
+	border-color: #000;
+}
+textarea {
+	vertical-align: top;
+	height: 53m;
+}
+form > .button {
+	padding-left: 90px;
+	margin-left: .5em;
+}
+/*CSS image hover effects for the gallery*/
+.thumbnail {
+	margin: 1em;
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	float: left;
+	background-color: rgba(18, 101, 192, 0.66);
+	display: inline-block;
+}
+.ul a {
+	text-decoration: none;
+}
+.subGallery>h1{
+	text-align: center;
+	margin-top: 2em;
+}
+/*Media Query for mobile devices; Note that this breaks Bootstraps media query size limit of 766px so that we can set a custom size limit of 1091px*/
+@media (max-width: 1091px){
+	.navbar-header {
+      float: none!important;
+  }
+  .navbar-right {
+      float: right!important;
+  }
+  .navbar-toggle {
+      display: inline-block;
+      position: absolute;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: left;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .homeGallery{
+	height: 25em;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+	margin-top: 5em;
+	}
+  .homeGallery img{
+	width: 100%;
+	overflow: hidden;
+	}
+	.thumbnail img {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		cursor: pointer;
+		height: auto;
+		width: auto;
+		z-index: 1;
+	}
+	
+	.thumbnail h2{
+		color: black;
+		position: relative;
+		font-family: 20px;
+		margin: 1;
+	}
+	
+	h2.zero,p.zero {
+		margin: 0em;
+		top: 5.5em;
+		\: 1em;
+		padding: 0px 15px;
+		text-align: left;
+		color: black;
+		font-weight: bold;
+		font-size: 3em;
+		z-index: 2;
+		background-color: rgba(188, 80, 73, 0.81);
+		display: initial;
+	}
+	
+}
+
+/*Media Query for desktop devices and up*/
+@media (min-width: 1092px){
+	.homeGallery{
+		height: 52em;
+		width: auto;
+		overflow: hidden;
+		background-color: bisque;
+		margin: 0 10em;
+	}
+	h2.zero,p.zero {
+		margin: 0;
+		margin-top: 1.8em;
+		padding: 0;
+		text-align: center;
+		color: black;
+		font-weight: bold;
+		font-size: 4em;
+		z-index: 1;
+		top: 1.6em;
+	}
+.thumbnail img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	z-index: 2;
+}
+.thumbnail img:hover {
+	z-index: 0;
+	opacity: 0.8;
+	transition: .4s ease-in-out;
+}
+.thumbnail h2{
+	color: black;
+	position: relative;
+	font-weight: bold;
+	margin: 0;
+}
+	
+}
