@@ -42,6 +42,9 @@ h1{
 	text-align: center;
 	font-weight: bold;
 }
+.homeGallery > img {
+	margin: auto;
+}
 .galleryFlex {		max-width: 1900px;	display: flex;			flex-flow: row wrap;	justify-content: center;			align-content: space-around;			overflow: hidden;			margin-left: -3em;
 }
 body {
@@ -187,11 +190,10 @@ form > .button {
 /*Media Query for desktop devices and up*/
 @media (min-width: 1092px){
 	.homeGallery{
-		height: 52em;
-		width: auto;
+		height: 53em;
+		width: 100%;
 		overflow: hidden;
-		background-color: bisque;
-		margin: 0 10em;
+		margin-top: 6em;
 	}
 	h2.zero,p.zero {
 		margin: 0;
