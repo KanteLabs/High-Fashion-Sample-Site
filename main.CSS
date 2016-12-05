@@ -16,6 +16,13 @@
 	position: relative;
 	margin-top: -0.5em;
 }
+navbar-brand {
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
 li {
 	list-style-type: none;
 	display: inline;
@@ -112,12 +119,13 @@ form > .button {
 	.navbar-header {
       float: none!important;
   }
-  .navbar-right {
-      float: left!important;
+  .navbar-left {
+      float: right!important;
   }
   .navbar-toggle {
       display: inline-block;
-      position: absolute;
+      float: left;
+      position: relative;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
@@ -207,26 +215,26 @@ form > .button {
 		font-size: 4em;
 		z-index: 1;
 		top: 1.6em;
+		}
+	.thumbnail img {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		cursor: pointer;
+		height: auto;
+		width: auto;
+		z-index: 2;
 	}
-.thumbnail img {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	cursor: pointer;
-	height: auto;
-	width: auto;
-	z-index: 2;
-}
-.thumbnail img:hover {
-	z-index: 0;
-	opacity: 0.8;
-	transition: .4s ease-in-out;
-}
-.thumbnail h2{
-	color: black;
-	position: relative;
-	font-weight: bold;
-	margin: 0;
-}
+	.thumbnail img:hover {
+		z-index: 0;
+		opacity: 0.8;
+		transition: .4s ease-in-out;
+	}
+	.thumbnail h2{
+		color: black;
+		position: relative;
+		font-weight: bold;
+		margin: 0;
+	}
 	
 }
