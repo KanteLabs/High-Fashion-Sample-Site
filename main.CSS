@@ -113,12 +113,11 @@ form > .button {
       float: none!important;
   }
   .navbar-right {
-      float: right!important;
+      float: left!important;
   }
   .navbar-toggle {
       display: inline-block;
-      position: fixed;
-      float: left!important;
+      position: absolute;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
