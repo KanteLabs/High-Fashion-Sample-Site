@@ -23,17 +23,17 @@
 	$(document).ready(function(){
 		$('.search').hide();
 		
-		$('.carousel').carousel({
-			interval: 4000;
-			pause: null;
-			
-		})
-		
 		$('.glyphicon-search').click(function(){
 			$('.search').toggle();
 			$('.search').mouseleave(function(){
 				$('.search').hide();
 			});
+		})
+		
+		$('.carousel').carousel({
+			interval: 4000;
+			pause: null;
+			
 		})
 	})
 	</script>

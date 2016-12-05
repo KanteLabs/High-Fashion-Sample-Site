@@ -1,5 +1,5 @@
 -Add a shop it on hover of images of people
---view gallery so like a mini carousel
+--view gallery so like a mini carousel [done]
 -hover for more info(sizes, color,)
 -Clothing Name   Price
 ---type of item
