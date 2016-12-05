@@ -40,7 +40,7 @@ li a:hover{
 	text-align: center;
 	text-decoration: none;
 }
-.active{
+.active2{
 	background-color: #C25B56;
 	color: white;
 }
@@ -50,9 +50,10 @@ h1{
 	text-align: center;
 	font-weight: bold;
 }
-.homeGallery > img {
+img.img-responsive.carouselPics {
 	margin: auto;
 	/* height: 100%; */
+	background-color: white;
 }
 .galleryFlex {		max-width: 1900px;	display: flex;			flex-flow: row wrap;	justify-content: center;			align-content: space-around;			overflow: hidden;			margin-left: -3em;
 }
@@ -153,15 +154,16 @@ form > .button {
       display:block !important;
   }
   .homeGallery{
-	height: 25em;
+	height: 100%;
 	width: 100%;
 	overflow: hidden;
 	background-color: white;
 	margin: auto;
 	margin-top: 5em;
 	}
-  .homeGallery img{
-	/* height: 100%; */
+  img.img-responsive.carouselPics{
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	}
 	.thumbnail img {

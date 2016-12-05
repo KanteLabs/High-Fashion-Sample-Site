@@ -24,7 +24,9 @@
 		$('.search').hide();
 		
 		$('.carousel').carousel({
-			interval: 3000
+			interval: 4000;
+			pause: null;
+			
 		})
 		
 		$('.glyphicon-search').click(function(){
@@ -51,7 +53,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="menu-toggle-nav">
 			<ul class="nav navbar-nav">
-				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="index.html" class="active2">Home</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ladies</a>
 					<ul class="dropdown-menu">
@@ -83,7 +85,34 @@
 	</div>
 </nav>
 <div class="homeGallery container-fluid">
-	<img class="img-responsive" src="./images/w9.jpg" alt="./images/w10.jpg" title=""/>
+	<div id="carousel-home" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img class="img-responsive carouselPics" src="./images/w9.jpg" alt="./images/w10.jpg" title=""/>
+		  <!--<div class="carousel-caption">
+			...
+		  </div>-->
+		</div>
+		<div class="item">
+		  <img class="img-responsive carouselPics" src="./images/w11.jpg" title=""/>
+		  <!--<div class="carousel-caption">
+			...
+		  </div>-->
+		</div>
+		<div class="item">
+		  <img class="img-responsive carouselPics" src="./images/w12.jpg" title=""/>
+		  <!--<div class="carousel-caption">
+			...
+		  </div>-->
+		</div>
+		<div class="item">
+		  <img class="img-responsive carouselPics" src="./images/w13.jpg" title=""/>
+		  <!--<div class="carousel-caption">
+			...
+		  </div>-->
+		</div>
+	  </div>
+	</div>
 </div>
 <br>
 <h1>Explore</h1>
