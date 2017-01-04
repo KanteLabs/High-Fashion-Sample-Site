@@ -8,13 +8,14 @@
 .navbar, .navbar-nav{
 	display: inline-block;
 	float: none;
-	background-color: #FEF6EB;	
+	background-color: #FEF6EB;
 	text-align: center;
 }
 .navbar-brand img{
 	width: 5em;
 	position: relative;
 	margin-top: -0.5em;
+	float: right;
 }
 navbar-brand {
     float: right;
@@ -117,6 +118,9 @@ form > .button {
 }
 /*Media Query for mobile devices; Note that this breaks Bootstraps media query size limit of 766px so that we can set a custom size limit of 1091px*/
 @media (max-width: 1091px){
+	.Lookbook{
+		
+	}
 	.navbar-header {
       float: none!important;
   }
@@ -153,6 +157,12 @@ form > .button {
   .collapse.in{
       display:block !important;
   }
+  .carouselPics2{
+    width: 100%;
+}
+  #carousel-home{
+	  overflow: hidden;
+	 }
   .homeGallery{
 	height: 100%;
 	width: 100%;
@@ -162,6 +172,8 @@ form > .button {
 	margin-top: 5em;
 	}
   img.img-responsive.carouselPics{
+	margin: auto;
+	/* height: 100%; */
 	width: 100%;
 	overflow: hidden;
 	}
@@ -200,8 +212,11 @@ form > .button {
 
 /*Media Query for desktop devices and up*/
 @media (min-width: 1092px){
+	.Lookbook{
+		margin-left: 0em;
+	}
 	.homeGallery{
-		height: 53em;
+		height: 50em;
 		width: 100%;
 		overflow: hidden;
 		margin-top: 6em;
